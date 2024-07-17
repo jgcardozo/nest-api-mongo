@@ -1,0 +1,30 @@
+ @baseUrl = http://localhost:3000
+
+ ### getAllTask
+# @name getAllTasks
+GET {{baseUrl}}/tasks
+
+### post createTask
+# @name createTask
+POST {{baseUrl}}/tasks
+Content-Type: application/json
+
+{
+    "title":"bañar al perrro",
+    "description":"bañarlo a las 8am 222" 
+}
+
+### deleteTask
+# @name delTask
+DELETE {{baseUrl}}/tasks/a2200a42-7104-4ac3-af4b-2af4e4d95199
+
+### update Task
+# @name updateTask
+PATCH {{baseUrl}}/tasks/1
+Content-Type: application/json
+
+{
+    "status" : "done"
+    //"title":"lavardoneropa",
+    //"description": "he bañado a oreo a las 9:25"
+}
